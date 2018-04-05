@@ -14,6 +14,7 @@
 		82B18E842076235C005FE02E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B18E822076235C005FE02E /* LaunchScreen.storyboard */; };
 		82B18E872076235C005FE02E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B18E862076235C005FE02E /* main.m */; };
 		82B18E8F20762E95005FE02E /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B18E8E20762E95005FE02E /* SafariServices.framework */; };
+		82B18E9220763315005FE02E /* Captura001.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B18E9120763315005FE02E /* Captura001.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		82B18E852076235C005FE02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82B18E862076235C005FE02E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82B18E8E20762E95005FE02E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		82B18E9120763315005FE02E /* Captura001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Captura001.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		82B18E762076235C005FE02E /* SFSafariViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82B18E9020763315005FE02E /* Capturas */,
 				82B18E772076235C005FE02E /* AppDelegate.h */,
 				82B18E782076235C005FE02E /* AppDelegate.m */,
 				82B18E7A2076235C005FE02E /* ViewController.h */,
@@ -82,6 +85,14 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		82B18E9020763315005FE02E /* Capturas */ = {
+			isa = PBXGroup;
+			children = (
+				82B18E9120763315005FE02E /* Captura001.png */,
+			);
+			path = Capturas;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -143,6 +154,7 @@
 			files = (
 				82B18E842076235C005FE02E /* LaunchScreen.storyboard in Resources */,
 				82B18E812076235C005FE02E /* Assets.xcassets in Resources */,
+				82B18E9220763315005FE02E /* Captura001.png in Resources */,
 				82B18E7F2076235C005FE02E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
