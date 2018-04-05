@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <SFSafariViewControllerDelegate>
 
 @end
 
@@ -18,14 +18,38 @@
     
     NSLog(@"\nViewController");
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [self verWeb];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - SafariViewController
+
+- (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
+    
+    [self dismissViewControllerAnimated:true completion:nil];
+    
+}
+
+#pragma mark - Datos
+
+-(void)verWeb {
+    
+    NSString *urlString = @"https://github.com/";
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    SFSafariViewController *svc = [[SFSafariViewController alloc] initWithURL:url];
+    svc.delegate = self;
+    [self presentViewController:svc animated:NO completion:nil];
+    
+}
 
 @end
